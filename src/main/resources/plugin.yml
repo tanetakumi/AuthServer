@@ -1,0 +1,13 @@
+name: AuthServer
+version: ${project.version}
+main: net.serveron.hane.authserver.AuthServer
+api-version: 1.16
+commands:
+  auth:
+    usage: /auth
+    description: authentication of hane server plugin
+
+permissions:
+  auth.*:
+    description: Gives access to all commands
+    default: op
