@@ -63,7 +63,7 @@ public class AuthCommand implements CommandExecutor {
                     for(String pm : permitModList){
                         data.removeIf(d -> d.toLowerCase().contains(pm));
                     }
-                    plugin.runAsyncDiscord(data.toString());
+                    plugin.runAsyncDiscord(player.getName()+data.toString());
 
                     player.sendMessage(Component.text("はねサーバー認証完了:MOD,データパック情報を記録しました。"));
                 } else {
